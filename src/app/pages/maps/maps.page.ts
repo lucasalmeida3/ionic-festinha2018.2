@@ -71,7 +71,7 @@ export class MapsPage implements OnInit {
       res => {
         //console.log(res);
         if (this.marker) {
-          this.marker.setPosition = res[0];
+          this.marker.setPosition = (res[0]);
         } else {
           this.addMarket();
         }
