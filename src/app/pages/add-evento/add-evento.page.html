@@ -12,7 +12,13 @@
     </ion-item>
     <ion-item>
       <ion-label position="floating">Tema</ion-label>
-      <ion-input type="text" name="tema" [(ngModel)]="evento.tema" required></ion-input>
+      <ion-select value="" okText="Okay" cancelText="Cancelar" required>
+        <ion-select-option value="a">Festa</ion-select-option>
+        <ion-select-option value="b">Comemoração</ion-select-option>
+        <ion-select-option value="c">Resenha</ion-select-option>
+        <ion-select-option value="d">Baile</ion-select-option>
+        <ion-select-option value="e">Festa surpresa</ion-select-option>
+      </ion-select>
     </ion-item>
     <ion-item>
       <ion-label position="floating">Data</ion-label>
